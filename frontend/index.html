@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Goal Tracker</h1>
+            <p>Set goals. Track progress. Stay focused.</p>
+        </header>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h2 id="totalGoals">0</h2>
+                <p>Total Goals</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="completedGoals">0</h2>
+                <p>Completed Goals</p>
+            </div>
+        </section>
+
+        <section class="form-card">
+            <h2>Add a Goal</h2>
+
+            <form id="goalForm">
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter goal name"
+                    required
+                >
+
+                <select id="category" required>
+                    <option value="">Choose category</option>
+                    <option value="School">School</option>
+                    <option value="Fitness">Fitness</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Work">Work</option>
+                </select>
+
+                <input
+                    type="number"
+                    id="progress"
+                    placeholder="Progress %"
+                    min="0"
+                    max="100"
+                    value="0"
+                    required
+                >
+
+                <button type="submit">+ Add Goal</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>My Goals</h2>
+            <div id="goals"></div>
+        </section>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+
+services:
+  frontend:
+    build: ./frontend
+    image: goal-tracker-frontend:test
+    ports:
+      - "8081:80"
+    depends_on:
+      - backend
+    networks:
+      - goal_network
+
+  backend:
+    build: ./backend
+    image: goal-tracker-backend:test
+    volumes:
+      - goal_data:/data
+    networks:
+      - goal_network
+
+networks:
+  goal_network:
+    driver: bridge
+
+volumes:
+  goal_data:
+    external: true
+
