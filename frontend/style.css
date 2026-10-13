@@ -165,3 +165,69 @@ button:hover {
     }
 }
 
+
+/* Goal journal styling */
+.journal-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: #111827;
+    border-radius: 10px;
+}
+
+.journal-section[hidden] {
+    display: none;
+}
+
+.journal-section h4 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.journal-form {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.journal-form textarea {
+    width: 100%;
+    min-height: 110px;
+    padding: 12px;
+    background: #374151;
+    color: #f9fafb;
+    border: 1px solid #4b5563;
+    border-radius: 8px;
+    font: inherit;
+    resize: vertical;
+}
+
+.journal-entry {
+    background: #1f2937;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.journal-entry p {
+    overflow-wrap: anywhere;
+}
+
+.journal-date {
+    color: #9ca3af;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.journal-entry button {
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+.journal-button {
+    background: #7c3aed;
+}
+
+.journal-button:hover {
+    background: #6d28d9;
+}
+

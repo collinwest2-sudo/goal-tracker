@@ -26,3 +26,16 @@ venv/
 # Logs
 *.log
 
+# Local backup files
+*.before-journal
+
+# Python generated files
+__pycache__/
+*.pyc
+
+# Local environment files
+.env
+.env.*
+
+# Local database files
+*.db
